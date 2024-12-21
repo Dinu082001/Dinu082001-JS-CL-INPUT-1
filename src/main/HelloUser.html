@@ -42,8 +42,13 @@
          */
 
          // CODE HERE
-         
-
+         const textElement = document.getElementById('text');
+        const inputElement = document.getElementById('input');
+        const submitButton = document.getElementById('submit');
+        submitButton.addEventListener('click', () => {
+            const name = inputElement.value;
+            textElement.innerText = `Hello, ${name}`;
+        });
          /* OPTIONAL PRACTICE: If you want more practice later, try taking multiple inputs from a user. For example,
             try taking a first and last name as input from the user. */
     </script>
